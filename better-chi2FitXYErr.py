@@ -104,9 +104,12 @@ input_file = args.input_file[0]
 data = np.loadtxt(input_file)
 
 # Rough sanity check: Does the input file have 4 columns?
- # if data.shape[1] != 4:
- #      print("Datei %s hat keine 4 Spalten!" % (input_file), file=sys.stderr)
- #     sys.exit(1)
+if data.shape[1] != 4:
+    if data.shape[1] == 5:
+        None
+    else:
+        print("Datei %s hat keine 4 Spalten!" % (input_file), file=sys.stderr)
+        sys.exit(1)
      
 
 # Give meaningful variable names to input data columns:
