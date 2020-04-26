@@ -12,6 +12,12 @@ import scipy.odr as sodr
 
 ##_Modify your Plot_##
 
+# NOTICE: Do always foreign read code before exectuing! You can never know what some nasty people wrote the code...
+# Just cause this version is simpler to modify doesn't mean that you don't need to understand whats happening!
+
+#Change the string following text to set yout plot labels 
+#Warning: Make sure to keep the "%-Arguments" like %.2f untouched by changing you text!
+
 #Modify Title
 plot_title = "%d data points and line-fit"
 
