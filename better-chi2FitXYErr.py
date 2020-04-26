@@ -166,6 +166,7 @@ plt.legend()
 #checking if name for file is given
 if args.output_file != None:
   plt.savefig(args.output_file[0], bbox_inches='tight', dpi=plt_size)
+  error_output = False
 else:
   error_output = True
 
