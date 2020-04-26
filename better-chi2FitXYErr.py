@@ -33,6 +33,9 @@ axis_size = 2.0
 err_color = 'r.'
 fit_color = "g"
 
+#resolution
+plt_size = 300
+
 # Function definitions:
 
 # The function lin_finc is internally used by the ODR fitting procedure.
@@ -138,9 +141,7 @@ print("y = a * x + b with\n")
 print("a = %f +/- %f" % (a, err_a))
 print("b = %f +/- %f" % (b, err_b))
 
-# create a plot with data points and fit-line if the user asked for it:
-if args.output_file != None:
-     None
+# create a plot
 # font size of labels etc,
 matplotlib.rcParams['font.size'] = label_size
 # line width of coordinate axes
@@ -158,7 +159,7 @@ plt.legend()
 
 #checking if name for file is given
 if args.output_file != None:
-  plt.savefig(args.output_file[0], bbox_inches='tight')
+  plt.savefig(args.output_file[0], bbox_inches='tight', dpi=plt_size)
 else:
   error_output = True
 
