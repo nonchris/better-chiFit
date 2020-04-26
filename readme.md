@@ -7,7 +7,7 @@ The feature is that all settings are bundled at the top of the code, so that eve
 The input way data is put in has also changed. There is now a file input from the terminal instead of entering all values in the script itself.  
 
 Both scripts are compaltible according to input-file structure.  
-If you're using my new versions, yu're fine, if you're using the original Version of `chi2FitXYErr` please notice that you need to change three lines of code in order to make them compatible:  
+If you're using my new versions, you're fine, if you're using the original Version of `chi2FitXYErr` please notice that you need to change three lines of code in order to make them compatible:  
 The expected format of the input-file is compatible with the input format of `chi2FitXYErr.py`. `chiFit.py` needs an extra column in that file, there are now five instead of four.  
 It is required to disable the check for exactly four columns in `chi2FitXYErr.py` (line 83)   
 
