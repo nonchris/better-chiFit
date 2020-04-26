@@ -1,2 +1,29 @@
-This is a better version of chiFit.py used at university bonn.
+## This is a better version of the script chiFit.py used in physics at university bonn.
 
+The script is more modular and usable than before.  
+I included the old version in the history of my commits for better comparison.  
+The feature is that all settings are bundled at the top of the code, so that everybody can understand what is to set and where. 
+
+The input way data is put in has also changed. There is now a file input from the terminal instead of entering all values in the script itself.  
+
+The expected format of the input-file is compatible with the input format of `chi2FitXYErr.py`. `chiFit.py` needs an extra column in that file, there are now five instead of four.  
+It is required to disable the check for exactly four columns in `chi2FitXYErr.py` (line 83)  
+```py
+if data.shape[1] != 4:
+     print("Datei %s hat keine 4 Spalten!" % (input_file), file=sys.stderr)
+     sys.exit(1)
+ ```
+ You can otherwise just change the four into a five.  
+
+Please note that I did take a pervious version of one script and combined it with code from an other script as a startingpoint.  
+But there are also many changes and additions in the code written by myself.  
+
+The intention of that project is to make the script more accessible especially for the prospective physics teachers who have to use the script too without hearing the EDV Modulue which prepares the physics students for using such scripts.  
+
+**Please don't forget to read and understand the code eventhough it isnt't needed anymore (because I did that work for you).  
+You can't trust me or any other code you can find on the internet if you don't understand whats happening!**
+
+The original Version is from an unknown user, i did copy code from [Thomas Erben](https://github.com/terben)  
+
+### How to use:
+Just enter `python3 chi2Fit -h` in the terminal, this should explain everything. If you don't understand how it's used you shouldn't use it without proper knowlede!
