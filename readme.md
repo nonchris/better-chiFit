@@ -1,5 +1,6 @@
-## This is a better version of the script chiFit.py used in physics at university bonn.
+## This is a better version of the scripts `chiFit.py` and `chi2FitXYErr.py` used in physics at university bonn.
 
+### Notes for `chi2Fit.py`  
 The script is more modular and usable than before.  
 I included the old version in the history of my commits for better comparison.  
 The feature is that all settings are bundled at the top of the code, so that everybody can understand what is to set and where. 
@@ -23,8 +24,11 @@ The original Versions are publicly avaibale on the website of [university-bonn](
 `chi2Fit.py` is from an unknown user, i did also copy code from [Thomas Erben](https://github.com/terben)  
 `chi2FitXYErr.py` was written by [Thomas Erben](https://github.com/terben) and modified by me.  
 
-### How to use:
-Just enter `python3 chi2Fit -h` in the terminal, this should explain everything. If you don't understand how it's used you shouldn't use it without proper knowlede!
-
-## There is also an improvement on `chi2FitXYErr.py` in this repository
+### Notes for `chi2FitXYErr.py`
 I din't add any functions, I just modified the settings for labeling so that it is more accessible for everybody.  
+My Version is also out of the box compatible with the other scripts needed file-structure.  
+
+## How to use:
+Just enter `python3 chi2Fit,py -h` / `python3 chi2FitXYErr.py -h` in the terminal, this should explain everything. If you don't understand how it's used you shouldn't use it without proper knowlede!
+
+
