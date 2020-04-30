@@ -259,15 +259,14 @@ plt.legend()
 
 #checking for output name and saving plot
 if args.output_file != None:
-	plotname = args.output_file[0]
-	plt.savefig(plotname, bbox_inches=0, dpi=plt_size)
-	plt.close()
-
+  plotname = args.output_file[0]
+  plt.savefig(plotname, bbox_inches=0, dpi=plt_size)
+  error_output = False
 #if no output name is given, an error will be triggered at the end
 else:
 	error_output = True
-
 # Zeige den Plot
+
 plt.show()
 
 # Raising an error, if no output name was given
