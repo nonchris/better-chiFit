@@ -142,7 +142,7 @@ data = np.loadtxt(input_file)
 # Give meaningful variable names to input data columns:
 xdata = data[:,0]
 ydata = data[:,2]
-sigma = data[:,4]
+sigma = data[:,3]
 
 ##__until here__##
 
