@@ -103,11 +103,8 @@ DESCRIPTION:
   Input is a file (command line option -i) with five columns:
   x, error_x, y, error_y, sigma
 
-  Column 2 and 4 are ignored, those are needed for chi2FitXYErr.py.
+  Column 2 is ignored, this is needed for chi2FitXYErr.py.
   You can put any random number at this columns.
-
-  Please note that you need to disable the "if data.shape[1] != 4:" check in chiFitXYErr.py
-  in order to keep both scripts working with the same data
 
   The input file may contaion comment lines starting with a hash (#).
 
