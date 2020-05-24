@@ -41,7 +41,7 @@ second_param =  "b = %.2f"
 
 #Set Color and format of your graphs
 #Color of the dots that represent your values
-val_color = 'ro'
+val_color = 'r.'
 fit_color = "g"
 
 #Set fontsizes of formulas in the plot (simply a number)
