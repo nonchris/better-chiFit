@@ -186,7 +186,7 @@ intercept_std_err = fitErrors[1]
 
 # print result to screen:
 print("result of fit:\n")
-print("y = a * x + b with\n")
+print("y = a * x + b with")
 print("a = %f +/- %f" % (slope, slope_std_err))
 print("b = %f +/- %f" % (intercept, intercept_std_err))
 
@@ -199,16 +199,6 @@ print("b = %f +/- %f" % (intercept, intercept_std_err))
 # Sie Rechnungen immer transparent ausfuehren und NIE mit schlecht
 # dokumentiertem closed-source black-box Code!
 
-# Der Wert chi2 ist ein Mass fuer die Uebereinstimmung der Daten mit der Messung
-# chi2 = sum_i (ydata_i-f(x_data_i))**2/sigma_i**2
-thischi2=chi2(xdata,ydata,sigma,f,fitParams[0],fitParams[1])
-
-ndf = len(ydata)-len(fitParams)
-fitErrors = np.sqrt(np.diag(fitCovariances))
-for i in range(0,2):
-    print('parameter {0}:     {1:.3f} +- {2:.3f}'.format(i,fitParams[i], fitErrors[i]))
-slope_std_err = fitErrors[0]
-intercept_std_err = fitErrors[1]
 
 # nun erschaffen wir einen plot
 fig = plt.figure()
@@ -237,8 +227,8 @@ ax.text(a_b_x_anker, a_b_y_anker, formulaTextErrors, verticalalignment=a_b_vert,
 
 #Parts of the follwing text is defined obove 
 #Chi_Formula shown in plot image
-formulaTextChi2 = chi_formula % thischi2
-ax.text(chi_x_anker, chi_y_anker, formulaTextChi2, verticalalignment=chi_vert, horizontalalignment= chi_hor, transform=ax.transAxes, fontsize=chi_size)
+#formulaTextChi2 = chi_formula % thischi2
+#ax.text(chi_x_anker, chi_y_anker, formulaTextChi2, verticalalignment=chi_vert, horizontalalignment= chi_hor, transform=ax.transAxes, fontsize=chi_size)
 
 #title of the plot
 plt.title(plot_title)
