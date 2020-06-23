@@ -1,3 +1,7 @@
+# Update - Please note:
+**My rewrite is now oficially merged with the [original Versions](https://github.com/unibonn/physics-labclasses-fits) of University Bonn.**  
+So this project is no longer supported. I'll leave it here for documentation reasons. But please visit my [fork](https://github.com/ceron21/physics-labclasses-fits) or the [original](https://github.com/unibonn/physics-labclasses-fits) for the latest version.   
+
 ## This is a better version of the scripts `chiFit.py` and `chi2FitXYErr.py` used in physics at university bonn.
 
 ### Notes for `chi2Fit.py`  
